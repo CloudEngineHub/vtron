@@ -118,7 +118,6 @@ constructor(options?: SystemOptions)
 
 type BuiltinFeature =
   | 'MyComputer'
-  | 'AppStore'
   | 'DataTimeTray'
   | 'BatteryTray'
   | 'NetworkTray'
@@ -126,22 +125,53 @@ type BuiltinFeature =
   | 'UrlOpener'
   | 'TextOpener'
   | 'ShortCutOpener'
-  | 'ExeOpener';
+  | 'ExeOpener'
+  | 'Power'
+  | 'MessageCenter'
+  | 'Setting'
+  | 'Setting-Language'
+  | 'Setting-Account'
+  | 'Setting-Personalization';
 
 
-默认值是 ['MyComputer', 'AppStore', 'DataTimeTray', 'BatteryTray', 'NetworkTray', 'ImageOpener', 'UrlOpener', 'TextOpener', 'ShortCutOpener', 'ExeOpener']
+默认值是 [
+    'MyComputer',
+    'DataTimeTray',
+    'BatteryTray',
+    'NetworkTray',
+    'ImageOpener',
+    'UrlOpener',
+    'TextOpener',
+    'ShortCutOpener',
+    'ExeOpener',
+    'Power',
+    'MessageCenter',
+    'Setting',
+    'Setting-Language',
+    'Setting-Account',
+    'Setting-Personalization',
+  ]
 
 ExeOpener 是一个打开exe文件的功能，如果不设置，则几乎所有应用程序都无法打开
 
 MyComputer 是文件浏览器，我的电脑
-
-AppStore 是应用商店
-
 DataTimeTray 是时间显示托盘图标
 
 BatteryTray 是电池显示托盘图标
 
 ShortCutOpener 是快捷方式打开器
+
+Power 是左下角电源按钮
+
+MessageCenter 是消息中心
+
+Setting 是左下角设置按钮
+
+Setting-Language 是设置窗口中的语言设置
+
+Setting-Account 是设置窗口中的账户设置
+
+Setting-Personalization 是设置窗口中的个性化设置
 
 ## desktop
 
