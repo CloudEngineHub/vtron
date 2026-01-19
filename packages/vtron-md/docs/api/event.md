@@ -4,6 +4,18 @@
 
 例如常用的有contextMenu.show 事件，触发此事件之后，就会在传入的鼠标事件的位置弹出自定义的右键菜单
 
+## system.shutdown
+
+当系统关闭时，会发出shutdown事件
+
+## system.restart
+
+当系统重启时，会发出restart事件
+
+## system.recover
+
+当系统恢复出厂设置时，会发出recover事件
+
 ## startmenu.hidden
 
 当这个事件触发时，会隐藏startmenu
